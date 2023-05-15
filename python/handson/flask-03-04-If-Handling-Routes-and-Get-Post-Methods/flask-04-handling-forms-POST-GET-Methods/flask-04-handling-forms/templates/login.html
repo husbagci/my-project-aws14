@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+</head>
+
+<body>
+    <h1>Merhaba Kullanıcı Girişinine Hoşgeldiniz</h1>
+    <form action="#" method="POST">
+        <p>
+            <label for="name">İsim : </label>
+            <input type="text" name="username" id="name">
+        </p>
+        <p>
+            <label for="pswd">Şifre:</label>
+            <input type="password" name="password" id="pswdid">
+        </p>
+        <p><input type="submit" value="Giriş"></p>
+
+        {% if control %}
+        <h2>Merhaba {{ user }},  Kullanıcı Girişinine Hoşgeldiniz! Şifreniz Yanlış, Tekrar Deneyiniz... </h2>
+        {% endif %}
+    </form>
+</body>
+
+</html>
